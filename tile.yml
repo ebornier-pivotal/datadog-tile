@@ -60,6 +60,7 @@ packages:
     env: 
       NOZZLE_INSECURESSLSKIPVERIFY: true
       NOZZLE_DISABLEACCESSCONTROL: false 
+  health_check: none 
 #    path: resources/my-application-1.0.0.jar
 #   command: python app.py
 #   memory: 256M
