@@ -9,9 +9,9 @@ description: Datadog Metrics for Pivotal CF
 
 # Global defaults (all optional)
 #
-# org: test-org                         # Name of org to create for your apps
+org: datadog-org                         # Name of org to create for your apps
 # org_quota: 4096                       # Memory quota for that org in MB
-# space: test-space                     # Name of space to create for your apps
+space: datadog-space                     # Name of space to create for your apps
 apply_open_security_group: true         # Apply open security group, default: false
 
 properties:
@@ -32,7 +32,7 @@ forms:
     type: string
     label: UAA Username
     description: Address to use for junk mail
-  - name: UAA Password
+  - name: NOZZLE_PASSWORD
     type: string
     label: Nozzle UAA Password
   - name: NOZZLE_TRAFFICCONTROLLERURL
@@ -69,10 +69,10 @@ packages:
 # strongly recommend you leave this alone so that your tile always
 # runs with the latest stemcell.
 #
-  stemcell_criteria:
-    os: ubuntu-trusty
-    requires_cpi: false
-    version: '3146.9'
+stemcell_criteria:
+  os: ubuntu-trusty
+  requires_cpi: false
+  version: '3146.9'
 
 # Add properties you want to pass to your applications.
 # Properties specified here will not be configurable by the user.
