@@ -1,0 +1,8 @@
+---
+name: datadog_app
+
+dependencies: []
+
+files:
+- templates/all_open.json
+- datadog_app/manifest.yml

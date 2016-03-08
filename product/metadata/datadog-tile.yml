@@ -1,0 +1,272 @@
+---
+name: datadog-tile
+label: Datadog Metrics
+description: Datadog Metrics for Pivotal CF
+icon_image: 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
+product_version: '0.0.6'
+metadata_version: '1.5'
+rank: 1
+serial: true
+
+releases:
+- file: datadog-tile-0.0.6.tgz
+  name: datadog-tile
+  version: '0.0.6'
+
+stemcell_criteria:
+  os: ubuntu-trusty
+  requires_cpi: false
+  version: '3146.5'
+
+property_blueprints:
+#
+# Parameters for the entire product
+#
+- name: org
+  type: string
+  configurable: true
+  default: datadog-tile-org
+- name: org_quota
+  type: integer
+  configurable: true
+  constraints:
+    min: 512
+    max: 4096
+  default: 2048
+- name: space
+  type: string
+  configurable: true
+  default: datadog-tile-space
+- name: apply_open_security_group
+  type: boolean
+  configurable: true
+  default: True
+- name: allow_paid_service_plans
+  type: boolean
+  configurable: true
+  default: False
+#
+# Standard properties for package datadog_app
+#
+#
+# Custom properties from the tile.yml file
+#
+- name: author # Refer to this elsewhere as (( .properties.author ))
+  type: string
+  default: Erwan Bornier
+  configurable: false
+- name: nozzle_uaaurl # Refer to this elsewhere as (( .properties.nozzle_uaaurl ))
+  type: string
+  configurable: true
+- name: nozzle_username # Refer to this elsewhere as (( .properties.nozzle_username ))
+  type: string
+  configurable: true
+- name: uaa password # Refer to this elsewhere as (( .properties.uaa password ))
+  type: string
+  configurable: true
+- name: nozzle_trafficcontrollerurl # Refer to this elsewhere as (( .properties.nozzle_trafficcontrollerurl ))
+  type: string
+  configurable: true
+- name: nozzle_datadogapikey # Refer to this elsewhere as (( .properties.nozzle_datadogapikey ))
+  type: string
+  configurable: true
+- name: nozzle_metricprefix # Refer to this elsewhere as (( .properties.nozzle_metricprefix ))
+  type: string
+  configurable: true
+
+form_types:
+#
+# Custom form nozzle-configuration from the tile.yml file
+#
+- name: nozzle-configuration
+  label: Nozzle Configuration
+  description: Custom Properties for Test Tile
+  property_inputs:
+  - reference: .properties.nozzle_uaaurl
+    label: UAA URL
+    description: UAA URL
+  - reference: .properties.nozzle_username
+    label: UAA Username
+    description: Address to use for junk mail
+  - reference: .properties.uaa password
+    label: Nozzle UAA Password
+    description: Nozzle UAA Password
+  - reference: .properties.nozzle_trafficcontrollerurl
+    label: Traffic Controller URL
+    description: Traffic Controller URL
+  - reference: .properties.nozzle_datadogapikey
+    label: Datadog API Key
+    description: Datadog API Key
+  - reference: .properties.nozzle_metricprefix
+    label: Metric Prefix
+    description: Metric Prefix
+
+job_types:
+#
+# Default compilation job
+#
+- name: compilation
+  resource_label: compilation
+  resource_definitions:
+   - name: ram
+     type: integer
+     configurable: true
+     default: 2048
+   - name: ephemeral_disk
+     type: integer
+     configurable: true
+     default: 5120
+   - name: persistent_disk
+     type: integer
+     configurable: true
+     default: 0
+   - name: cpu
+     type: integer
+     configurable: true
+     default: 2
+  static_ip: 0
+  dynamic_ip: 1
+  max_in_flight: 1
+  instance_definitions:
+    - name: instances
+      type: integer
+      default: 1
+#
+# deploy-all job
+#
+- name: deploy-all
+  resource_label: deploy-all
+  errand: true
+  templates:
+  - name: deploy-all
+    release: datadog-tile
+  resource_definitions:
+  - name: ram
+    type: integer
+    configurable: false
+    default: 1024
+  - name: ephemeral_disk
+    type: integer
+    configurable: false
+    default: 4096
+  - name: persistent_disk
+    type: integer
+    configurable: false
+    default: 0
+  - name: cpu
+    type: integer
+    configurable: false
+    default: 1
+  static_ip: 0
+  dynamic_ip: 1
+  max_in_flight: 1
+  instance_definitions:
+  - name: instances
+    type: integer
+    configurable: false
+    default: 1
+  property_blueprints:
+  - name: vm_credentials
+    type: salted_credentials
+    default:
+      identity: vcap
+  - name: app_credentials
+    type: salted_credentials
+  manifest: |
+    domain: (( ..cf.cloud_controller.system_domain.value ))
+    app_domains:
+    - (( ..cf.cloud_controller.apps_domain.value ))
+    org: (( .properties.org.value ))
+    space: (( .properties.space.value ))
+    ssl:
+      skip_cert_verify: (( ..cf.ha_proxy.skip_cert_verify.value ))
+    cf:
+      admin_user: (( ..cf.uaa.system_services_credentials.identity ))
+      admin_password: (( ..cf.uaa.system_services_credentials.password ))
+    org_quota: (( .properties.org_quota.value ))
+    apply_open_security_group: (( .properties.apply_open_security_group.value ))
+    allow_paid_service_plans: (( .properties.allow_paid_service_plans.value ))
+    security:
+      user: (( .deploy-all.app_credentials.identity ))
+      password: (( .deploy-all.app_credentials.password ))
+    author: (( .properties.author.value ))
+    nozzle_uaaurl: (( .properties.nozzle_uaaurl.value ))
+    nozzle_username: (( .properties.nozzle_username.value ))
+    uaa password: (( .properties.uaa password.value ))
+    nozzle_trafficcontrollerurl: (( .properties.nozzle_trafficcontrollerurl.value ))
+    nozzle_datadogapikey: (( .properties.nozzle_datadogapikey.value ))
+    nozzle_metricprefix: (( .properties.nozzle_metricprefix.value ))
+    datadog_app:
+      name: datadog_app
+#
+# delete-all job
+#
+- name: delete-all
+  resource_label: delete-all
+  errand: true
+  templates:
+  - name: delete-all
+    release: datadog-tile
+  resource_definitions:
+  - name: ram
+    type: integer
+    configurable: false
+    default: 1024
+  - name: ephemeral_disk
+    type: integer
+    configurable: false
+    default: 4096
+  - name: persistent_disk
+    type: integer
+    configurable: false
+    default: 0
+  - name: cpu
+    type: integer
+    configurable: false
+    default: 1
+  static_ip: 0
+  dynamic_ip: 1
+  max_in_flight: 1
+  instance_definitions:
+  - name: instances
+    type: integer
+    configurable: false
+    default: 1
+  property_blueprints:
+  - name: vm_credentials
+    type: salted_credentials
+    default:
+      identity: vcap
+  - name: app_credentials
+    type: salted_credentials
+  manifest: |
+    domain: (( ..cf.cloud_controller.system_domain.value ))
+    app_domains:
+    - (( ..cf.cloud_controller.apps_domain.value ))
+    org: (( .properties.org.value ))
+    space: (( .properties.space.value ))
+    ssl:
+      skip_cert_verify: (( ..cf.ha_proxy.skip_cert_verify.value ))
+    cf:
+      admin_user: (( ..cf.uaa.system_services_credentials.identity ))
+      admin_password: (( ..cf.uaa.system_services_credentials.password ))
+
+post_deploy_errands:
+- name: deploy-all
+
+pre_delete_errands:
+- name: delete-all
+
+update:
+  canaries: 1
+  canary_watch_time: 10000-100000
+  max_in_flight: 1
+  update_watch_time: 10000-100000
+
+requires_product_versions:
+- name: cf
+  version: '~> 1.5'
+
+provides_product_versions:
+- name: datadog-tile
+  version: '0.0.6'
