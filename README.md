@@ -25,6 +25,10 @@ After importing the tile, you just only need one specific configuration for this
 
 Apply changes and play!
 
+NB:
+- this tile (at least this first version) embeds the nozzle as  docker app, so your PCF instance must be docker enabled
+- this tile works only online in order to retrieve the docker image + send the metrics to datadog.
+
 
 
 
