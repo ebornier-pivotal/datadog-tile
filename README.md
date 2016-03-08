@@ -1,6 +1,8 @@
 # datadog-tile
 Datadog tile for Pivotal Cloud Foundry
 
+![Alt text](datadog_metrics.png?raw=true "Optional Title")
+
 Datadog tile to deploy a nozzle to consume metrics from Pivotal Cloud Foundry. The nozzle app is the one defined in this repository (https://github.com/cloudfoundry-incubator/datadog-firehose-nozzle)
 
 The tile definition was built by using the Pivotal Cloud Foundry tile-generator (https://github.com/cf-platform-eng/tile-generator)
