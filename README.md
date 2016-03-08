@@ -17,9 +17,9 @@ tile build
 
 Then, you can import the datadog-tile-*.pivotal product into Pivotal Cloud Foundry as any product.
 
-![Alt text](nozzle configuration.png?raw=true "Optional Title")
-
 After importing the tile, you just only need one specific configuration for this tile by filling UAA & Loggregator credentials, and Datadog API key. (see https://github.com/cloudfoundry-incubator/datadog-firehose-nozzle to get a good understanding of informations to provide)
+
+![Alt text](nozzle configuration.png?raw=true "Optional Title")
 
 Apply changes and play!
 
