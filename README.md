@@ -1,3 +1,9 @@
+!!!!
+
+THIS TILE IS DEPRECATED - PLEASE USE THE FOLLOWING DOC INSTEAD :
+https://docs.datadoghq.com/integrations/cloud_foundry/
+
+
 # datadog-tile
 Datadog tile for Pivotal Cloud Foundry
 
